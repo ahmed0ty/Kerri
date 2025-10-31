@@ -1,0 +1,635 @@
+body {
+    font-family: "Nunito", sans-serif;
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+:root
+{
+    --maincolor:#e65f78 ;
+    --transition-time:0.5s ;
+}
+.text-maincolor
+{
+    color: var(--maincolor);
+}
+html
+{
+    scroll-padding-top: 86px;
+}
+/*               Fixed Buttons            */
+.gear
+{
+    width: 35px;
+    height: 35px;
+    background-color: gray;
+    border-radius: 0px 5px 5px 0px;
+    top: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.arrow-up
+{
+    width: 35px;
+    height: 35px;
+    background-color: var(--maincolor);
+    border-radius: 5px 5px 5px 5px;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+
+
+/*               Navbar              */
+.navbar .nav-link
+{
+    color: white;
+}
+.navbar-nav .nav-link.active
+{
+    color: var(--maincolor);
+}
+.bouncing-btn
+{
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 50px;
+    transform: translateY(220px);
+    animation: bouncing 1.5s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.innner-btn
+{
+    background-color: white;
+    width: 3px;
+    height: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+@keyframes bouncing {
+    0% {
+        transform: translateY(220px);
+    }
+
+    25% {
+        transform: translateY(235px);
+    }
+
+    50% {
+        transform: translateY(220px);
+    }
+
+    75% {
+        transform: translateY(260px);
+    }
+
+    100% {
+        transform: translateY(220px);
+    }
+}
+
+/*               header              */
+header
+{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/header-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+header h1::after
+{
+    content: "";
+    animation: typing 8s infinite ;
+}
+@keyframes typing {
+    0% {
+        content: "|";
+    }
+
+    1% {
+        content: "|";
+    }
+
+    2% {
+        content: "G|";
+    }
+
+    3% {
+        content: "Gr|";
+    }
+
+    4% {
+        content: "Gra|";
+    }
+
+    5% {
+        content: "Grap|";
+    }
+
+    6% {
+        content: "Graph|";
+    }
+
+    7% {
+        content: "Graphi|";
+    }
+
+    8% {
+        content: "Graphic|";
+    }
+
+    9% {
+        content: "Graphic |";
+    }
+
+    10% {
+        content: "Graphic D|";
+    }
+
+    11% {
+        content: "Graphic De|";
+    }
+
+    12% {
+        content: "Graphic Des|";
+    }
+
+    13% {
+        content: "Graphic Desi|";
+    }
+
+    14% {
+        content: "Graphic Desig|";
+    }
+
+    15% {
+        content: "Graphic Design|";
+    }
+
+    16% {
+        content: "Graphic Designe|";
+    }
+
+    17% {
+        content: "Graphic Designer|";
+    }
+
+    18% {
+        content: "Graphic Designer|";
+    }
+
+    19% {
+        content: "Graphic Designer|";
+    }
+
+    20% {
+        content: "Graphic Designer|";
+    }
+
+    21% {
+        content: "Graphic Designer|";
+    }
+
+    22% {
+        content: "Graphic Designe|";
+    }
+
+    23% {
+        content: "Graphic Design|";
+    }
+
+    24% {
+        content: "Graphic Desig|";
+    }
+
+    25% {
+        content: "Graphic Desi|";
+    }
+
+    26% {
+        content: "Graphic Des|";
+    }
+
+    27% {
+        content: "Graphic De|";
+    }
+
+    28% {
+        content: "Graphic D|";
+    }
+
+    29% {
+        content: "Graphic |";
+    }
+
+    30% {
+        content: "Graphic|";
+    }
+
+    31% {
+        content: "Graphi|";
+    }
+
+    32% {
+        content: "Graph|";
+    }
+
+    33% {
+        content: "Grap|";
+    }
+
+    34% {
+        content: "Gra|";
+    }
+
+    35% {
+        content: "Gr|";
+    }
+
+    36% {
+        content: "G|";
+    }
+
+    37% {
+        content: "|";
+    }
+
+    38% {
+        content: "|";
+    }
+
+    39% {
+        content: "|";
+    }
+
+    40% {
+        content: "P|";
+    }
+
+    41% {
+        content: "Ph|";
+    }
+
+    42% {
+        content: "Pho|";
+    }
+
+    43% {
+        content: "Phot|";
+    }
+
+    44% {
+        content: "Photo|";
+    }
+
+    45% {
+        content: "Photog|";
+    }
+
+    46% {
+        content: "Photogr|";
+    }
+
+    47% {
+        content: "Photogra|";
+    }
+
+    48% {
+        content: "Photograp|";
+    }
+
+    49% {
+        content: "Photograph|";
+    }
+
+    50% {
+        content: "Photographe|";
+    }
+
+    51% {
+        content: "Photographer|";
+    }
+
+    52% {
+        content: "Photographer|";
+    }
+
+    53% {
+        content: "Photographer|";
+    }
+
+    54% {
+        content: "Photographer|";
+    }
+
+    55% {
+        content: "Photographer|";
+    }
+
+    56% {
+        content: "Photographe|";
+    }
+
+    57% {
+        content: "Photograph|";
+    }
+
+    58% {
+        content: "Photograp|";
+    }
+
+    59% {
+        content: "Photogra|";
+    }
+
+    60% {
+        content: "Photogr|";
+    }
+
+    61% {
+        content: "Photog|";
+    }
+
+    62% {
+        content: "Photo|";
+    }
+
+    63% {
+        content: "Phot|";
+    }
+
+    64% {
+        content: "Pho|";
+    }
+
+    65% {
+        content: "Ph|";
+    }
+
+    66% {
+        content: "P|";
+    }
+
+    67% {
+        content: "|";
+    }
+
+    68% {
+        content: "|";
+    }
+
+    69% {
+        content: "|";
+    }
+
+    70% {
+        content: "K|";
+    }
+
+    71% {
+        content: "Ke|";
+    }
+
+    72% {
+        content: "Ker|";
+    }
+
+    73% {
+        content: "Kerr|";
+    }
+
+    74% {
+        content: "Kerri|";
+    }
+
+    75% {
+        content: "Kerri |";
+    }
+
+    76% {
+        content: "Kerri D|";
+    }
+
+    77% {
+        content: "Kerri De|";
+    }
+
+    78% {
+        content: "Kerri Deo|";
+    }
+
+    79% {
+        content: "Kerri Deo|";
+    }
+
+    80% {
+        content: "Kerri Deo|";
+    }
+
+    81% {
+        content: "Kerri Deo|";
+    }
+
+    82% {
+        content: "Kerri Deo|";
+    }
+
+    83% {
+        content: "Kerri De|";
+    }
+
+    84% {
+        content: "Kerri D|";
+    }
+
+    85% {
+        content: "Kerri |";
+    }
+
+    86% {
+        content: "Kerri|";
+    }
+
+    87% {
+        content: "Kerr|";
+    }
+
+    88% {
+        content: "Ker|";
+    }
+
+    89% {
+        content: "Ke|";
+    }
+
+    90% {
+        content: "K|";
+    }
+
+    91% {
+        content: "|";
+    }
+
+    92% {
+        content: "|";
+    }
+
+    93% {
+        content: "|";
+    }
+
+    94% {
+        content: "|";
+    }
+
+    95% {
+        content: "|";
+    }
+}
+/*               About Section             */
+
+.about-ico
+{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #0003;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 18px;
+    padding: 3px;
+    transition: var(--transition-time) all;
+}
+.about-ico:hover
+{
+   border-color: var(--maincolor);
+   color: var(--maincolor);
+}
+/*               Services Section             */
+
+.top-card::after
+{
+   content: "";
+   position: absolute;
+   width: 50px;
+   height: 2px;
+   background-color: var(--maincolor);
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 0;
+   transition: var(--transition-time);
+
+}
+.services .service-p
+{
+    max-width: 93%;
+}
+.services-inner:hover .top-card::after
+{
+    width: 25%;
+}
+/*               Client Section             */
+.carousel-indicators [data-bs-target] 
+{
+   background-color: var(--maincolor);
+   border: 2px solid var(--maincolor);
+   border-radius: 20px;
+   width: 20px;
+}
+.carousel-indicators .active
+{
+    background-color: var(--maincolor);
+    width: 40px;
+}
+/*               portfolio Section             */
+.nav-pills .nav-link
+{
+    color: black;
+    border-radius: 50px;
+    font-weight: 500;
+}
+.nav-pills .nav-link.active
+{
+    background-color: var(--maincolor);
+}
+.layer
+{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: #0009;
+    transition: var(--transition-time);
+}
+.layer:hover 
+{
+  opacity: 1;
+}
+.col-inner img
+{
+    transition: var(--transition-time);
+}
+.col-inner:hover img 
+{
+  scale: 1.1;
+}
+.inner-layer
+{
+    transform: translateY(200px);
+    transition: var(--transition-time);
+}
+.col-inner:hover .inner-layer
+{
+    transform: translateY(0);
+}
+
+/*               contact Section             */
+
+.form-control
+{
+  border: 2px solid #0002;
+
+}
+.form-control:focus
+{
+    box-shadow: unset;
+    border-color: #e65f78;
+
+}
+.contact .btn
+{
+    width: fit-content;
+  background-color:var(--maincolor);
+}
+.contact .btn:hover
+{
+    background-color: var(--maincolor);
+}
+.tilt-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}

@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerri | Bootstrap</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/master.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-spy">
+
+
+    <div class="fixed-buttons">
+        <div class="gear position-fixed">
+            <i class="fa-solid fa-gear fa-spin"></i>
+        </div>
+        <div class="arrow-up position-fixed ">
+            <a href="#home"><i class="fa-solid fa-chevron-up text-decoration-none text-white"></i></a>
+        </div>
+
+    </div>
+
+
+    <!-- !=====> Navbar + Header <====== -->
+    <nav class="navbar navbar-expand-lg bg-dark bg-opacity-50 navbar-dark fixed-top"id="navbar-spy">
+        <div class="container">
+            <a class="navbar-brand fs-1 fw-bold" href="#">Kerri</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2 fw-semibold">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#client">Client</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="home" id="home">
+        <div class="container d-flex flex-column justify-content-center align-items-center vh-100 text-white gap-3">
+            <h4>Welcome</h4>
+            <h1 class="display-3 fw-semibold text-center">I'M A </h1>
+            <p class="text-center text-white-50">It is a long established fact that a reader will be of a page when <br>
+                established fact looking at its layout.</p>
+            <a href="./files/cv.pdf"><button
+                    class="btn btn-outline-light text-uppercase rounded-5 px-5 py-3 fw-bold">Download
+                    CV</button></a>
+            <a href="#about" class="bouncing-btn">
+                <div class="innner-btn"></div>
+            </a>
+        </div>
+    </header>
+
+
+    <!-- !=====> About Section <====== -->
+
+    <section class="about py-5" id="about">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6 card tilt-card">
+                    <img src="./images/about.jpg" class="w-100 border border-1 p-1 rounded-1" alt="">
+                </div>
+                <div class="col-md-6 d-flex flex-column gap-2">
+                    <h2><span class="fw-semibold">About</span> Me</h2>
+                    <h3>Hello! <span class="text-maincolor fw-semibold">I'M Kerri Deo.</span></h3>
+                    <p class="text-muted">It is a long established fact that a reader will be distracted by the readable
+                        content of a page when looking at its layout.</p>
+                    <p class="text-muted">The point of using Lorem Ipsum is that it has a more-or-less normal
+                        distribution of letters, as opposed to using 'Content here, content here',
+                        making it look like readable English.</p>
+                    <p class="text-muted">There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered alteration in some form, by injected humour, or
+                        randomised words which don't look even slightly believable.</p>
+                    <div class="about-icons d-flex align-content-center gap-3">
+                        <div class="about-ico">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="about-ico">
+                            <i class="fa-brands fa-dribbble"></i>
+                        </div>
+                        <div class="about-ico">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="about-ico">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- !=====> Services Section <====== -->
+
+    <section class="services bg-light py-5" id="services">
+        <div class="container py-5">
+            <div class="section-header text-center mb-5">
+                <h2 class="mb-3">Our <span class="fw-bold">Services</span></h2>
+                <p>It is a long established fact that a reader will be of a page when <br>
+                    established fact looking at its layout.</p>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="services-inner border border-2 p-5">
+                        <div class="top-card text-center position-relative mb-4">
+                            <i class="fa-solid fa-chart-line fs-1 text-maincolor mb-3"></i>
+                            <h4 class="pb-3">Graphic Design</h4>
+                        </div>
+                        <p class="service-p text-center m-auto">There are many variations of passages of
+                            but the majority have suffered alteration in
+                            some form.</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="services-inner border border-2 p-5">
+                        <div class="top-card text-center position-relative mb-4">
+                            <i class="fa-solid fa-chart-line fs-1 text-maincolor mb-3"></i>
+                            <h4 class="pb-3">Graphic Design</h4>
+                        </div>
+                        <p class="service-p text-center m-auto">There are many variations of passages of
+                            but the majority have suffered alteration in
+                            some form.</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="services-inner border border-2 p-5">
+                        <div class="top-card text-center position-relative mb-4">
+                            <i class="fa-solid fa-chart-line fs-1 text-maincolor mb-3"></i>
+                            <h4 class="pb-3">Graphic Design</h4>
+                        </div>
+                        <p class="service-p text-center m-auto">There are many variations of passages of
+                            but the majority have suffered alteration in
+                            some form.</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="services-inner border border-2 p-5">
+                        <div class="top-card text-center position-relative mb-4">
+                            <i class="fa-solid fa-chart-line fs-1 text-maincolor mb-3"></i>
+                            <h4 class="pb-3">Graphic Design</h4>
+                        </div>
+                        <p class="service-p text-center m-auto">There are many variations of passages of
+                            but the majority have suffered alteration in
+                            some form.</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="services-inner border border-2 p-5">
+                        <div class="top-card text-center position-relative mb-4">
+                            <i class="fa-solid fa-chart-line fs-1 text-maincolor mb-3"></i>
+                            <h4 class="pb-3">Graphic Design</h4>
+                        </div>
+                        <p class="service-p text-center m-auto">There are many variations of passages of
+                            but the majority have suffered alteration in
+                            some form.</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="services-inner border border-2 p-5">
+                        <div class="top-card text-center position-relative mb-4">
+                            <i class="fa-solid fa-chart-line fs-1 text-maincolor mb-3"></i>
+                            <h4 class="pb-3">Graphic Design</h4>
+                        </div>
+                        <p class="service-p text-center m-auto">There are many variations of passages of
+                            but the majority have suffered alteration in
+                            some form.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- !=====> Client Section <====== -->
+
+    <section class="client py-5" id="client">
+
+        <div class="conrainer py-5">
+            <div class="section-header text-center mb-5">
+                <h2 class="mb-3">Our <span class="fw-bold">Client</span></h2>
+                <p>It is a long established fact that a reader will be of a page when <br>
+                    established fact looking at its layout.</p>
+            </div>
+
+            <div id="carouselExampleIndicators" class="carousel slide">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <i class="fa-solid fa-quote-left fa-4x mb-4 text-maincolor"></i>
+                        <img src="./images/testi-1.jpg"
+                        class="img-fluid rounded-pill d-block m-auto border border-2 p-1" alt="no-image">
+
+                        <blockquote class="text-muted my-3 ">
+                            "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                            letters, <br>
+                            as opposed to using 'Content here."
+                        </blockquote>
+                        <p>- Ebony verty, <span class="fw-bold">Envato</span></p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <i class="fa-solid fa-quote-left fa-4x mb-4 text-maincolor"></i>
+                        <img src="./images/testi-2.jpg"
+                            class="img-fluid rounded-pill d-block m-auto border border-2 p-1" alt="no-image">
+                        <blockquote class="text-muted my-3">
+                            "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                            letters, <br>
+                            as opposed to using 'Content here."
+                        </blockquote>
+                        <p>- Ebony verty, <span class="fw-bold">Envato</span></p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <i class="fa-solid fa-quote-left fa-4x mb-4 text-maincolor"></i>
+                        <img src="./images/testi-3.jpg"
+                            class="img-fluid rounded-pill d-block m-auto border border-2 p-1" alt="no-image">
+                        <blockquote class="text-muted my-3">
+                            "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                            letters, <br>
+                            as opposed to using 'Content here."
+                        </blockquote>
+                        <p>- Ebony verty, <span class="fw-bold">Envato</span></p>
+                    </div>
+                </div>
+                <div class="carousel-indicators position-static">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- !=====>Portfolio Section <====== -->
+
+    <section class="portfolio py-5 bg-light"id="portfolio">
+        <div class="container py-5">
+            <div class="section-header text-center mb-5">
+                <h2 class="mb-3">Our <span class="fw-bold">Works</span></h2>
+                <p>It is a long established fact that a reader will be of a page when <br>
+                    established fact looking at its layout.</p>
+            </div>
+            <ul class="nav nav-pills justify-content-center mb-5" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
+                        type="button" role="tab" aria-controls="pills-all" aria-selected="true">ALL</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-seo-tab" data-bs-toggle="pill" data-bs-target="#pills-seo"
+                        type="button" role="tab" aria-controls="pills-seo" aria-selected="false">SEO</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-webdesign-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-webdesign" type="button" role="tab" aria-controls="pills-webdesign"
+                        aria-selected="false">WEBDSIGN</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-work-tab" data-bs-toggle="pill" data-bs-target="#pills-work"
+                        type="button" role="tab" aria-controls="pills-work" aria-selected="false">work</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-wordpress-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-wordpress" type="button" role="tab" aria-controls="pills-wordpress"
+                        aria-selected="false">WORDPRESS</button>
+                </li>
+
+
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"
+                    tabindex="0">
+                    <div class="row gy-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="col-inner rounded-2 overflow-hidden position-relative">
+                                <img src="./images/1.jpg" alt="no-image" class="w-100">
+                                <div
+                                    class="layer position-absolute d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="inner-layer text-center">
+                                        <p class="m-0 text-white-50 mb-2">Category</p>
+                                        <h5 class="m-0">Project Title</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="col-inner rounded-2 overflow-hidden position-relative">
+                                <img src="./images/2.jpg" alt="no-image" class="w-100">
+                                <div
+                                    class="layer position-absolute d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="inner-layer text-center">
+                                        <p class="m-0 text-white-50 mb-2">Category</p>
+                                        <h5 class="m-0">Project Title</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="col-inner rounded-2 overflow-hidden position-relative">
+                                <img src="./images/3.jpg" alt="no-image" class="w-100">
+                                <div
+                                    class="layer position-absolute d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="inner-layer text-center">
+                                        <p class="m-0 text-white-50 mb-2">Category</p>
+                                        <h5 class="m-0">Project Title</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="col-inner rounded-2 overflow-hidden position-relative">
+                                <img src="./images/4.jpg" alt="no-image" class="w-100">
+                                <div
+                                    class="layer position-absolute d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="inner-layer text-center">
+                                        <p class="m-0 text-white-50 mb-2">Category</p>
+                                        <h5 class="m-0">Project Title</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="col-inner rounded-2 overflow-hidden position-relative">
+                                <img src="./images/5.jpg" alt="no-image" class="w-100">
+                                <div
+                                    class="layer position-absolute d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="inner-layer text-center">
+                                        <p class="m-0 text-white-50 mb-2">Category</p>
+                                        <h5 class="m-0">Project Title</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="col-inner rounded-2 overflow-hidden position-relative">
+                                <img src="./images/6.jpg" alt="no-image" class="w-100">
+                                <div
+                                    class="layer position-absolute d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="inner-layer text-center">
+                                        <p class="m-0 text-white-50 mb-2">Category</p>
+                                        <h5 class="m-0">Project Title</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-seo" role="tabpanel" aria-labelledby="pills-seo-tab" tabindex="0">
+                    <div class="row gy-4">
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="col-inner rounded-2 overflow-hidden position-relative">
+                                <img src="./images/2.jpg" alt="no-image" class="w-100">
+                                <div
+                                    class="layer position-absolute d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="inner-layer text-center">
+                                        <p class="m-0 text-white-50 mb-2">Category</p>
+                                        <h5 class="m-0">Project Title</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="col-inner rounded-2 overflow-hidden position-relative">
+                                <img src="./images/3.jpg" alt="no-image" class="w-100">
+                                <div
+                                    class="layer position-absolute d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="inner-layer text-center">
+                                        <p class="m-0 text-white-50 mb-2">Category</p>
+                                        <h5 class="m-0">Project Title</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="col-inner rounded-2 overflow-hidden position-relative">
+                                <img src="./images/5.jpg" alt="no-image" class="w-100">
+                                <div
+                                    class="layer position-absolute d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="inner-layer text-center">
+                                        <p class="m-0 text-white-50 mb-2">Category</p>
+                                        <h5 class="m-0">Project Title</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-webdesign" role="tabpanel" aria-labelledby="pills-webdesign-tab"
+                    tabindex="0">
+                    <div class="row gy-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="col-inner rounded-2 overflow-hidden position-relative">
+                                <img src="./images/1.jpg" alt="no-image" class="w-100">
+                                <div
+                                    class="layer position-absolute d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="inner-layer text-center">
+                                        <p class="m-0 text-white-50 mb-2">Category</p>
+                                        <h5 class="m-0">Project Title</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="col-inner rounded-2 overflow-hidden position-relative">
+                                <img src="./images/2.jpg" alt="no-image" class="w-100">
+                                <div
+                                    class="layer position-absolute d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="inner-layer text-center">
+                                        <p class="m-0 text-white-50 mb-2">Category</p>
+                                        <h5 class="m-0">Project Title</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="col-inner rounded-2 overflow-hidden position-relative">
+                                <img src="./images/4.jpg" alt="no-image" class="w-100">
+                                <div
+                                    class="layer position-absolute d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="inner-layer text-center">
+                                        <p class="m-0 text-white-50 mb-2">Category</p>
+                                        <h5 class="m-0">Project Title</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="col-inner rounded-2 overflow-hidden position-relative">
+                                <img src="./images/5.jpg" alt="no-image" class="w-100">
+                                <div
+                                    class="layer position-absolute d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="inner-layer text-center">
+                                        <p class="m-0 text-white-50 mb-2">Category</p>
+                                        <h5 class="m-0">Project Title</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="col-inner rounded-2 overflow-hidden position-relative">
+                                <img src="./images/6.jpg" alt="no-image" class="w-100">
+                                <div
+                                    class="layer position-absolute d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="inner-layer text-center">
+                                        <p class="m-0 text-white-50 mb-2">Category</p>
+                                        <h5 class="m-0">Project Title</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-work" role="tabpanel" aria-labelledby="pills-work-tab"
+                    tabindex="0">
+                    <div class="row gy-4">
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="col-inner rounded-2 overflow-hidden position-relative">
+                                <img src="./images/2.jpg" alt="no-image" class="w-100">
+                                <div
+                                    class="layer position-absolute d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="inner-layer text-center">
+                                        <p class="m-0 text-white-50 mb-2">Category</p>
+                                        <h5 class="m-0">Project Title</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="col-inner rounded-2 overflow-hidden position-relative">
+                                <img src="./images/4.jpg" alt="no-image" class="w-100">
+                                <div
+                                    class="layer position-absolute d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="inner-layer text-center">
+                                        <p class="m-0 text-white-50 mb-2">Category</p>
+                                        <h5 class="m-0">Project Title</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-wordpress" role="tabpanel" aria-labelledby="pills-wordpress-tab"
+                    tabindex="0">
+                    <div class="row gy-4">
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="col-inner rounded-2 overflow-hidden position-relative">
+                                <img src="./images/1.jpg" alt="no-image" class="w-100">
+                                <div
+                                    class="layer position-absolute d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="inner-layer text-center">
+                                        <p class="m-0 text-white-50 mb-2">Category</p>
+                                        <h5 class="m-0">Project Title</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="col-inner rounded-2 overflow-hidden position-relative">
+                                <img src="./images/3.jpg" alt="no-image" class="w-100">
+                                <div
+                                    class="layer position-absolute d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="inner-layer text-center">
+                                        <p class="m-0 text-white-50 mb-2">Category</p>
+                                        <h5 class="m-0">Project Title</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="col-inner rounded-2 overflow-hidden position-relative">
+                                <img src="./images/4.jpg" alt="no-image" class="w-100">
+                                <div
+                                    class="layer position-absolute d-flex justify-content-center align-items-center flex-column text-white">
+                                    <div class="inner-layer text-center">
+                                        <p class="m-0 text-white-50 mb-2">Category</p>
+                                        <h5 class="m-0">Project Title</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- !=====>Blog Section <====== -->
+
+    <section class="blog py-5" id="blog">
+        <div class="container py-5">
+            <div class="section-header text-center mb-5">
+                <h2 class="mb-3">Our <span class="fw-bold">Blog</span></h2>
+                <p>It is a long established fact that a reader will be of a page when <br>
+                    established fact looking at its layout.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card" style="width: 100%">
+                        <img src="./images/blog-1.jpg" class="card-img-top" alt="no-image">
+                        <div class="card-body bg-dark bg-opacity-25">
+                            <p class="fs-4 fw-semibold">There are many variations</p>
+                            <p>11 March 2018 <span class="text-maincolor">By Kerri</span></p>
+                            <p>Sit sagittis vulputate laoreet sodales tortor <br>
+                                nulla lobortis bibendum netus primis fames. <br> Lobortis ultricies.</p>
+                                <p>Read More...</p>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card" style="width: 100%">
+                        <img src="./images/blog-2.jpg" class="card-img-top" alt="no-image">
+                        <div class="card-body bg-dark bg-opacity-25">
+                            <p class="fs-4 fw-semibold">There are many variations</p>
+                            <p>11 March 2018 <span class="text-maincolor">By Kerri</span></p>
+                            <p>Sit sagittis vulputate laoreet sodales tortor <br>
+                                nulla lobortis bibendum netus primis fames. <br> Lobortis ultricies.</p>
+                                <p>Read More...</p>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card" style="width: 100%">
+                        <img src="./images/blog-3.jpg" class="card-img-top" alt="no-image">
+                        <div class="card-body bg-dark bg-opacity-25">
+                            <p class="fs-4 fw-semibold">There are many variations</p>
+                            <p>11 March 2018 <span class="text-maincolor">By Kerri</span></p>
+                            <p>Sit sagittis vulputate laoreet sodales tortor <br>
+                                nulla lobortis bibendum netus primis fames. <br> Lobortis ultricies.</p>
+                                <p class="pointer">Read More...</p>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           
+            
+
+        </div>
+    </section>
+
+    <!-- !=====>Contact Section <====== -->
+
+    <section class="contact py-5" id="contact">
+        <div class="container py-5">
+            <div class="section-header text-center mb-5">
+                <h2 class="mb-3">Contact <span class="fw-bold">US</span></h2>
+                <p>It is a long established fact that a reader will be of a page when <br>
+                    established fact looking at its layout.</p>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-4">
+                    <div class="contact-inner text-center">
+                        <i class="fa-solid fa-mobile-phone fs-1 mb-3 text-maincolor"></i>
+                        <h5 class="fw-semibold">Call Us On</h5>
+                        <span class="text-muted">+985 123 7856</span>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-inner text-center">
+                        <i class="fa-solid fa-envelope fs-1 mb-3 text-maincolor"></i>
+                        <h5 class="fw-semibold">Email Us At</h5>
+                       <a href="mailto:website.kerri@gmail.com" class="text-muted text-decoration-none">website.kerri@gmail.com</a>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-inner text-center">
+                        <i class="fa-solid fa-location-dot fs-1 mb-3 text-maincolor"></i>
+                        <h5 class="fw-semibold">Visit Office</h5>
+                        <span class="text-muted">202, Grasselli Street , Conway.</span>
+                    </div>
+
+                </div>
+            </div>
+            <form action="">
+                <div class="row gy-4">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control p-3" placeholder="Your Name...">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control p-3" placeholder="Your Email...">
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control p-3" placeholder="Your Subject...">
+                    </div>
+                    <div class="col-md-12">
+                        <textarea name="" id="" class="form-control" rows="5" placeholder="Your Message..."></textarea>
+                    </div>
+                    <div class="col-md-12">
+                        <button class="btn btn-main text-white float-end py-3 px-4 fw-semibold">SEND MESSAGE</button>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/script.js"></script>
+
+
+</body>
+
+</html>
